@@ -1,0 +1,84 @@
+.lab-report-form-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf9f2;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  border: #333;
+  padding-left: 35px;
+  padding: 100px;
+}
+
+.lab-report-form-container h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.lab-report-form {
+  height:500px;
+  width: 900px;
+  max-width: 900px;
+}
+
+.lab-report-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.lab-report-form input[type="text"],
+.lab-report-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.lab-report-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.lab-report-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.history-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.history-button:hover {
+  background-color: #007bb5;
+}

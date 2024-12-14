@@ -1,0 +1,125 @@
+.inventory-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-title {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inventory-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inventory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.inventory-details {
+  flex-grow: 1;
+}
+
+.inventory-name {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.inventory-price {
+  color: #008000;
+}
+
+.inventory-stock {
+  color: #d9534f;
+}
+
+.inventory-edit-button,
+.inventory-delete-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inventory-edit-button:hover {
+  background-color: #003f8a;
+}
+
+.inventory-delete-button {
+  background-color: #d9534f;
+}
+
+.inventory-delete-button:hover {
+  background-color: #c9302c;
+}
+
+.inventory-edit-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.inventory-edit-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.inventory-edit-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.inventory-update-button,
+.inventory-cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inventory-update-button {
+  background-color: #008000;
+  color: white;
+}
+
+.inventory-update-button:hover {
+  background-color: #006400;
+}
+
+.inventory-cancel-button {
+  background-color: #d9534f;
+  color: white;
+}
+
+.inventory-cancel-button:hover {
+  background-color: #c9302c;
+}

@@ -1,10 +1,9 @@
 package com.example.Clinic_Back.Controller;
 
 import com.example.Clinic_Back.Entity.Treatment;
-
+import com.example.Clinic_Back.Service.auth.TreatmentService;
 import com.example.Clinic_Back.Entity.User;
 import com.example.Clinic_Back.Repository.UserRepository;
-import com.example.Clinic_Back.Service.auth.TreatmentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

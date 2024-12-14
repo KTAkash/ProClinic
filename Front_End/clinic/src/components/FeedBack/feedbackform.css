@@ -1,0 +1,150 @@
+/* feedbackform.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 240, 255, 0.8));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed h1 {
+  font-size: 2.5rem;
+  color: #0056ff;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 85, 255, 0.4);
+}
+
+.bg {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.feedback-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-form input:focus {
+  border-color: #0056ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 85, 255, 0.5);
+}
+
+.feedback-form button {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.feedback-form button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.feedback-form button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 90, 255, 0.4);
+}
+
+.feedback-form p {
+  margin-top: 10px;
+  color: #28a745;
+  font-size: 0.9rem;
+}
+
+/* Modal Styles */
+.modal {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal h2 {
+  font-size: 1.5rem;
+  color: #0056ff;
+  margin-bottom: 15px;
+}
+
+.modal button {
+  margin: 10px 5px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.modal button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+}
+
+.modal .star {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal .on .star {
+  color: #ffcc00;
+}
+
+.modal .off .star {
+  color: #ccc;
+}

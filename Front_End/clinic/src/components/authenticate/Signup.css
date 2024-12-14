@@ -1,0 +1,89 @@
+/* Unique styles for the signup component */
+.signup-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: linear-gradient(135deg, #89f7fe, #000000);
+}
+
+.signup-box {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.signup-title {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.signup-input:focus {
+  outline: none;
+  border-color: #66a6ff;
+  box-shadow: 0 0 6px rgba(102, 166, 255, 0.8);
+}
+
+.signup-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #66a6ff, #89f7fe);
+  color: #ffffff;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  transform: scale(1.05);
+}
+
+.signup-button:active {
+  transform: scale(0.98);
+}
+
+.toast-container {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-box {
+      padding: 25px;
+  }
+
+  .signup-title {
+      font-size: 1.8rem;
+  }
+
+  .signup-input,
+  .signup-button {
+      font-size: 0.9rem;
+  }
+}

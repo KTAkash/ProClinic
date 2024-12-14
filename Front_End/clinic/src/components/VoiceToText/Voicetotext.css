@@ -1,0 +1,90 @@
+/* Voicetotext.css */
+
+/* Component Styles */
+.voice-to-text-container {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e6efff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #0056ff;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 85, 255, 0.4);
+  text-align: center;
+}
+
+.main-content {
+  background: #f9f9ff;
+  border: 2px dashed #a8b8ff;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  min-height: 100px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.main-content:hover {
+  background: #eef2ff;
+  border-color: #0056ff;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-container button {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-container button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-container button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 90, 255, 0.4);
+}
+
+.btn-container button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(0, 90, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.voice-to-text-container {
+  animation: fadeIn 0.6s ease-out;
+}

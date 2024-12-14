@@ -1,0 +1,88 @@
+/* AdminLabReport.css */
+
+.admin-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 255, 0.9));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+.dashboard-heading {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loading-message,
+.error-message,
+.no-reports-message {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.error-message {
+  color: #ff4d4d;
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table-head {
+  background-color: #0056ff;
+  color: white;
+}
+
+.table-heading {
+  padding: 10px;
+  text-align: left;
+  font-size: 1rem;
+  background-color: #66a6ff;
+}
+
+.table-body .report-row:nth-child(odd) {
+  background-color: #ffff;
+}
+
+.table-body .report-row:nth-child(even) {
+  background-color: #ffff;
+}
+
+.report-cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.file-link {
+  color: #0056ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.file-link:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.delete-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3);
+}

@@ -1,0 +1,117 @@
+/* AllAppointments.css */
+
+.all-appointments-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.all-appointments-header {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.table-appointments {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-appointments th,
+.table-appointments td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-appointments th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.table-appointments tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-appointments tr:hover {
+  background-color: #f1f1f1;
+}
+
+.button-update {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-update:hover {
+  background-color: #0056b3;
+}
+
+.button-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-delete:hover {
+  background-color: #c82333;
+}
+
+.button-send {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-send:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.button-send:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.all-appointments-container button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.all-appointments-container button {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.all-appointments-container button:hover {
+  background-color: #138496;
+}

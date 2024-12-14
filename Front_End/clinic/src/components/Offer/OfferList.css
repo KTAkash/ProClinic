@@ -1,0 +1,21 @@
+.offer-list-container {
+  padding: 20px;
+}
+
+.offer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.offer-table th,
+.offer-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.offer-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}

@@ -41,14 +41,20 @@ public class WebSecurityConfiguration {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource())) // Enable CORS
                 .authorizeHttpRequests(request -> request
                         .requestMatchers("/ht/**").permitAll()
+                        .requestMatchers("/therapy/**").permitAll()
+                        .requestMatchers("/sa/**").permitAll()
+                        .requestMatchers("/offer/**").permitAll()
+                        .requestMatchers("/api/lab-reports/**").permitAll()
                         .requestMatchers("/ht/admin/**").hasAuthority("ROLE_Admin")
                         .requestMatchers("/ht/Student/**").hasAuthority("ROLE_Student")
-                        .requestMatchers("/ht/Pharmacist/**").hasAuthority("ROLE_Pharmacist")
+                        .requestMatchers("/ht/Pharmacist/inventory/**").hasAuthority("ROLE_Pharmacist")
                         .requestMatchers("/ht/Receptionist/**").hasAuthority("ROLE_Receptionist")
                         .requestMatchers("/ht/customer/**").permitAll()
                         .requestMatchers("/ht/patients/**").permitAll()
                         .requestMatchers("/ht/treatments/**").permitAll()
                         .requestMatchers("/users/**").permitAll()
+                        .requestMatchers("/api/file/**").permitAll()
+                        .requestMatchers("/api/feedback/**").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)) // Use session-based authentication
                 .authenticationProvider(authenticationProvider())
